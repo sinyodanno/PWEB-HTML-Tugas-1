@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Web | Portofolio</title>
-  </head>
-  <body>
-    <div class="container">
-      <main class="content">
-        <section class="hero">
-          <img src="pasfoto.jpg" alt="" />
-          <div class="hero-content">
-            <h1>Danno Denis Dhaifullah</h1><br/>
-            <h3>ITS Informatics Engineering Student</h3><br/><br/>
-            <p>
-              Hi! Welcome to my website. These are several informations about me. I am currently studying at ITS Informatics Engineering. You can find more about me<br/>
-              through my LinkedIn or Instagram. You can also contact me at WhatsApp, Line, or E-mail. Thank you for visiting my website. Regards, Danno.<br/>
-            </p>
-            <a href="https://www.linkedin.com/in/danno-denis-dhaifullah/" class="action-btn">My Profile</a>
-          </div>
-        </section>
-      </main>
-      <div class="footer">
-        <footer>
-          <ul>
-            <li>
-                <a href="https://www.instagram.com/no.danno/"><img src="instagram.png" alt="" /></a>
-            </li>
-            <li>
-              <a href="https://wa.me/082170787878/"><img src="whatsapp.png" alt="" /></a>
-            </li>
-            <li>
-                <a href="http://line.me/ti/p/~dannodhaifullah"><img src="line.png" alt="" /></a>
-            </li>
-            <li>
-                <a href="mailto:dannodan81@gmail.com"><img src="Gmail.png" alt="" /><p></a>
-            </li>
-          </ul>
-        </footer>
-      </div>
-    </div>
-  </body>
+<html lang="en" dir="ltr">
+ 
+<head>
+  <meta charset="utf-8">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+ 
+<body>
+ 
+<table class="calculator" >
+    <tr>
+        <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+ 
+        <!-- clearScreen() function clears all the values -->
+        <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+    </tr>
+    <tr>
+        <!-- display() function displays the value of clicked button -->
+        <td> <input type="button" value="1" onclick="display('1')" /> </td>
+        <td> <input type="button" value="2" onclick="display('2')" /> </td>
+        <td> <input type="button" value="3" onclick="display('3')" /> </td>
+        <td> <input type="button" value="/" onclick="display('/')" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="4" onclick="display('4')" /> </td>
+        <td> <input type="button" value="5" onclick="display('5')" /> </td>
+        <td> <input type="button" value="6" onclick="display('6')" /> </td>
+        <td> <input type="button" value="*" onclick="display('*')" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="7" onclick="display('7')" /> </td>
+        <td> <input type="button" value="8" onclick="display('8')" /> </td>
+        <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        <td> <input type="button" value="-" onclick="display('-')" /> </td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="." onclick="display('.')" /> </td>
+        <td> <input type="button" value="0" onclick="display('0')" /> </td>
+    
+        <!-- calculate() function evaluates the mathematical expression -->
+        <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+        <td> <input type="button" value="+" onclick="display('+')" /> </td>
+    </tr>
+</table>
+ 
+<script type="text/javascript" src="script.js"></script>
+ 
+</body>
+ 
 </html>
